@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/intercept",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "AgentWall",
+      "hasCanvas": false,
+      "bodyTextLen": 746,
+      "bodyTextHash": "06054ea84f67e12a58831a7f9f6b2c0ff06e10e769403a4badd6d21c0f4c6b86",
+      "bodyTextPrefix": "AgentWall Zero-trust runtime Overview Intercept Policies Vault A",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/intercept-page.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "AgentWall",
+      "hasCanvas": false,
+      "bodyTextLen": 667,
+      "bodyTextHash": "75008d5ee70141919562fb6d0a9468d358e37f6be58c6fbe02453d0ca643ce0c",
+      "bodyTextPrefix": "AgentWall Zero-trust runtime Live interceptor Drop a tool call t",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/intercept-page-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/intercept-page.json"
+}

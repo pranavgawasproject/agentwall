@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "AgentWall",
+      "hasCanvas": false,
+      "bodyTextLen": 1747,
+      "bodyTextHash": "9e593781021b8d17d747ee8ca31f457319debdf1688a4b06502fb693c7e3ce2d",
+      "bodyTextPrefix": "AgentWall Zero-trust runtime Overview Intercept Policies Vault A",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "AgentWall",
+      "hasCanvas": false,
+      "bodyTextLen": 1596,
+      "bodyTextHash": "cd1180f974aa8c0d1f44387c05f06839843bae58a829ae288a866b141d8a10c7",
+      "bodyTextPrefix": "AgentWall Zero-trust runtime Armed / 4 sinks proxied Blast radiu",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

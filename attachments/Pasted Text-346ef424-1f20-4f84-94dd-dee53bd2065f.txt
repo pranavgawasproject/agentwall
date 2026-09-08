@@ -1,0 +1,13 @@
+The single most urgent, high-conviction, and monetizable unsolved problem in software engineering right now is The Blast-Radius Dilemma of Autonomous AI Agents: specifically, building a Zero-Trust Runtime Proxy and Secret Firewall for Agent Tool Calls (MCP & Terminal Agents).
+Developers are rapidly adopting autonomous CLI agents (like Claude Code, Cursor background agents, and custom scripts) hooked into Model Context Protocol (MCP) servers, databases, and terminal shells. However, letting an agent run autonomously is currently terrifying: a single hallucination, rogue third-party MCP tool, or prompt injection can wipe a database table, execute git push --force, or leak .env secrets and credentials directly into LLM prompt contexts. Because there is no granular, drop-in safety layer, developers are forced to manually approve every command—defeating the purpose of autonomous agents.
+The Product: AgentWall (Zero-Trust MCP & Agent Gateway)
+A drop-in, zero-latency local daemon and network proxy that sits between any AI client (Cursor, Claude Code, terminal agents) and the environment (MCP servers, bash shells, databases).
+| Core Feature | How It Solves the Pain Point |
+|---|---|
+| Outbound Secret Masking | Intercepts tool outputs before they hit the LLM context. Replaces API keys, JWTs, and database credentials with ephemeral synthetic tokens, rehydrating them only when sent to execution environments. |
+| AST-Based Command Interception | Parses shell scripts and SQL in real time. Blocks destructive operations (DROP TABLE, UPDATE without WHERE, recursive rm, arbitrary `curl |
+| Copy-on-Write Rollbacks | Takes an instantaneous, lightweight snapshot of the repository and database state before an agent starts a task, offering a 1-click revert if the agent goes rogue. |
+| Audit Logs & Egress Guardrails | Blocks unauthorized network calls from local tools, preventing third-party MCP servers from exfiltrating codebase data. |
+Why Developers and Teams Buy Immediately
+ * Direct Fear-to-Safety Conversion: Solo developers gladly pay $15–$25/month for cloud secret vaults, seamless multi-agent management, and automated rollbacks so they can run agents overnight without babysitting.
+ * Corporate Credit Card Velocity: Engineering leads and CTOs are currently blocking team-wide adoption of autonomous agents due to security and compliance fears (SOC 2, HIPAA). A tool providing tamper-proof audit trails, tool allowlists, and credential zero-leakage transforms a compliance nightmare into an instant enterprise purchase ($50–$100/seat/month).
